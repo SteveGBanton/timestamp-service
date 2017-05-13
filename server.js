@@ -1,8 +1,11 @@
 var express = require('express')
 var app = express()
+// app.use(require('express-markdown')({
+//   directory: __dirname,
+// }));
 
 app.get('/', (req, res) => {
-    res.send
+    res.sendFile(__dirname+'/readme.md')
 })
 
 function cleanDate(date) {
