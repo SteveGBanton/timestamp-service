@@ -1,6 +1,9 @@
 var express = require('express')
 var app = express()
 
+app.get('/', (req, res) => {
+    res.send
+})
 
 function cleanDate(date) {
     var newDateCreator = new Date(date);
@@ -40,6 +43,6 @@ app.get('/*', (req, res) => {
    
     
 })
-app.listen(8080)
+app.listen(process.env.PORT || 8080)
 
 
